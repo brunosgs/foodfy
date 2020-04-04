@@ -1,2 +1,2 @@
 # foodfy
-Project developed in the LaunchBase 3.0
+Project developed in the Bootcamp LaunchBase 3.0
