@@ -43,7 +43,7 @@ body {
 
 /* === SECTIONS ===*/
 
-.contain {
+.contain-index {
     display: grid;
     grid-template-columns: 1fr 1fr;
     max-width: var(--maxwidth940);
@@ -71,11 +71,11 @@ body {
     margin-top: 10px;
 }
 
-.contain .img-contain {
+.contain-index .img-contain {
     height: inherit;
 }
 
-.contain .img-contain img {
+.contain-index .img-contain img {
     padding: 66px 100px 0 154px;
 }
 
