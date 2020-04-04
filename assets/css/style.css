@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=Oxanium:400,700|Roboto:400,700&display=swap');
+
+/* === RESET ===*/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+:root {
+    --maxwidth940: 940px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* === HEADER === */
+
+.navbar {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    max-width: var(--maxwidth940);
+    margin: 37px auto 30px auto;
+}
+
+.navbar .logo {
+    height: 27px;
+}
+
+.navbar .menu {
+    text-align: left;
+}
+
+.navbar .menu a {
+    color: #000000;
+    text-decoration: none;
+    padding: 0 15px;
+}
+
+
+/* === SECTIONS ===*/
+
+.contain {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: var(--maxwidth940);
+    height: 366px;
+    margin: 0 auto 50px auto;
+    background: #FBDFDB;
+    border-radius: 30px;
+}
+
+.text-contain {
+    padding: 117px 0 0 60px;
+}
+
+.description h1 {
+    color: #111111;
+    font-size: 32px;
+    line-height: 38px;
+}
+
+.description p {
+    color: #000000;
+    opacity: 0.7;
+    font-size: 18px;
+    line-height: 28px;
+    margin-top: 10px;
+}
+
+.contain .img-contain {
+    height: inherit;
+}
+
+.contain .img-contain img {
+    padding: 66px 100px 0 154px;
+}
+
+.accessed {
+    max-width: var(--maxwidth940);
+    margin: 0 auto;
+}
+
+.accessed h1 {
+    color: #111111;
+    line-height: 28px;
+}
+
+.most-accessed {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    margin-top: 20px;
+}
+
+.img-accessed {
+    height: 140px;
+}
+
+.most-accessed .img-accessed img {
+    border-radius: 15px;
+    width: 300px;
+}
+
+.most-accessed .card-content-accessed {
+    margin: 20px 0 30px 0;
+}
+
+.most-accessed .card-content-accessed h3 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #111111;
+}
+
+.most-accessed .card-content-accessed .author {
+    font-size: 14px;
+    line-height: 16px;
+    color: #777777;
+}
+
+.footer {
+    margin-top: 20px;
+    background: #EEEEEE;
+    text-align: center;
+    height: 62px;
+}
+
+.footer h6 {
+    color: #999999;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+    padding: 23px;
+}
