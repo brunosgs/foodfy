@@ -1,5 +1,5 @@
 const modalOverlay = document.querySelector('.modal-overlay');
-const modal = document.querySelector('.modal');
+const modalContent = document.querySelector('.modal-content');
 const cards = document.querySelectorAll('.card-accessed');
 
 for (const card of cards) {
@@ -7,8 +7,9 @@ for (const card of cards) {
         const cardAccessedID = card.getAttribute('id');
 
         modalOverlay.classList.add('active');
-    });
 
+        modalContent.innerHTML = document.getElementById(cardAccessedID).innerHTML;
+    });
 }
 
 document.querySelector('.close-modal').addEventListener("click", function() {
