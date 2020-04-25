@@ -4,16 +4,25 @@ const data = require('./data')
 
 const server = express()
 
-server.set('viwe engine', 'njk')
-server.use(express.static('public'))
-server.use(function(req, res) {
-    res.send("Página não encontrada!")
+server.listen(5000, function() {
+    console.log("Server is running...")
 })
+
+server.set('view engine', 'njk')
+server.use(express.static('public'))
 
 nunjucks.configure('views', {
     express: server
 })
 
-server.listen(5000, function() {
-    console.log("Server is running...")
+server.get("/", function(req, res) {
+    return res.render("index")
+})
+
+server.get("/about", function(req, res) {
+    return res.render("about")
+})
+
+server.get("/recipe", function(req, res) {
+    return res.render("recipe")
 })

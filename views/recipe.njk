@@ -1,26 +1,10 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+{% extends "layout.njk" %}
 
-<head>
-    <title>Foodfy</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <meta charset="utf-8">
-</head>
+{% block head %}
+    <title>Foodfy - Recipe</title>
+{% endblock %}
 
-<body>
-    <header>
-        <nav class="navbar">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="assets/img/logo.png" alt="Logo Foodfy">
-                </a>
-            </div>
-            <div class="menu">
-                <a href="about.html">Sobre</a>
-                <a href="recipe.html">Receitas</a>
-            </div>
-        </nav>
-    </header>
+{% block wrapper %}
     <section class="accessed">
         <div class="most-accessed">
             <div id="burguer" class="card-accessed">
@@ -135,18 +119,10 @@
     </section>
     <div class="modal-overlay">
         <div class="modal">
-            <div class="modal-content">
-            </div>
+            <div class="modal-content"></div>
             <a class="close-modal">
                 Fechar modal
             </a>
         </div>
     </div>
-    <footer class="footer">
-        <h6>Todos direitos reservados, receitas Foodfy.</h6>
-    </footer>
-
-    <script src="assets/js/script.js"></script>
-</body>
-
-</html>
+{% endblock %}
