@@ -107,6 +107,7 @@ body {
 .most-accessed .img-accessed img {
     border-radius: 15px;
     width: 300px;
+    height: inherit;
 }
 
 .most-accessed .card-content-accessed {
