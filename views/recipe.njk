@@ -7,122 +7,17 @@
 {% block wrapper %}
     <section class="accessed">
         <div class="most-accessed">
-            <div id="burguer" class="card-accessed">
-                <div class="img-accessed">
-                    <img src="assets/img/burger.png" alt="Burguer">
+            {% for card in cards %}
+                <div id="{{card.idRecipe}}" class="card-accessed">
+                    <div class="img-accessed">
+                        <img src="{{card.smallImage}}" alt="{{card.idRecipe}}">
+                    </div>
+                    <div class="card-content-accessed">
+                        <h3>{{card.title}}</h3>
+                        <span class="author">por {{card.author}}</span>
+                    </div>
                 </div>
-                <div class="card-content-accessed">
-                    <h3>Triplo bacon burguer</h3>
-                    <span class="author">por Jorge Relato</span>
-                </div>
-            </div>
-            <div id="pizza" class="card-accessed">
-                <div class="img-accessed">
-                    <img src="assets/img/pizza.png" alt="Pizza">
-                </div>
-                <div class="card-content-accessed">
-                    <h3>Pizza 4 estações</h3>
-                    <span class="author">por Fabiana Melo</span>
-                </div>
-            </div>
-            <div id="espaguete" class="card-accessed">
-                <div class="img-accessed">
-                    <img src="assets/img/espaguete.png" alt="Espaguete">
-                </div>
-                <div class="card-content-accessed">
-                    <h3>Espaguete ao alho</h3>
-                    <span class="author">por Júlia Kinoto</span>
-                </div>
-            </div>
-            <div id="lasanha" class="card-accessed">
-                <div class="img-accessed">
-                    <img src="assets/img/lasanha.png" alt="Lasanha">
-                </div>
-                <div class="card-content-accessed">
-                    <h3>Lasanha mac n' cheese</h3>
-                    <span class="author">por Juliano Vieira</span>
-                </div>
-            </div>
-            <div id="doce" class="card-accessed">
-                <div class="img-accessed">
-                    <img src="assets/img/doce.png" alt="Doce">
-                </div>
-                <div class="card-content-accessed">
-                    <h3>Docinhos pão-do-céu</h3>
-                    <span class="author">por Ricardo Golvea</span>
-                </div>
-            </div>
-            <div id="asinhas" class="card-accessed">
-                <div class="img-accessed">
-                    <img src="assets/img/asinhas.png" alt="Asinhas">
-                </div>
-                <div class="card-content-accessed">
-                    <h3>Assinhas de frango ao barbecue</h3>
-                    <span class="author">por Vania Steroski</span>
-                </div>
-            </div>
-            <div id="burguer" class="card-accessed">
-                <div class="img-accessed">
-                    <img src="assets/img/burger.png" alt="Burguer">
-                </div>
-                <div class="card-content-accessed">
-                    <h3>Triplo bacon burguer</h3>
-                    <span class="author">por Jorge Relato</span>
-                </div>
-            </div>
-            <div id="pizza" class="card-accessed">
-                <div class="img-accessed">
-                    <img src="assets/img/pizza.png" alt="Pizza">
-                </div>
-                <div class="card-content-accessed">
-                    <h3>Pizza 4 estações</h3>
-                    <span class="author">por Fabiana Melo</span>
-                </div>
-            </div>
-            <div id="espaguete" class="card-accessed">
-                <div class="img-accessed">
-                    <img src="assets/img/espaguete.png" alt="Espaguete">
-                </div>
-                <div class="card-content-accessed">
-                    <h3>Espaguete ao alho</h3>
-                    <span class="author">por Júlia Kinoto</span>
-                </div>
-            </div>
-            <div id="lasanha" class="card-accessed">
-                <div class="img-accessed">
-                    <img src="assets/img/lasanha.png" alt="Lasanha">
-                </div>
-                <div class="card-content-accessed">
-                    <h3>Lasanha mac n' cheese</h3>
-                    <span class="author">por Juliano Vieira</span>
-                </div>
-            </div>
-            <div id="doce" class="card-accessed">
-                <div class="img-accessed">
-                    <img src="assets/img/doce.png" alt="Doce">
-                </div>
-                <div class="card-content-accessed">
-                    <h3>Docinhos pão-do-céu</h3>
-                    <span class="author">por Ricardo Golvea</span>
-                </div>
-            </div>
-            <div id="asinhas" class="card-accessed">
-                <div class="img-accessed">
-                    <img src="assets/img/asinhas.png" alt="Asinhas">
-                </div>
-                <div class="card-content-accessed">
-                    <h3>Assinhas de frango ao barbecue</h3>
-                    <span class="author">por Vania Steroski</span>
-                </div>
-            </div>
+            {% endfor %}
         </div>
     </section>
-    <div class="modal-overlay">
-        <div class="modal">
-            <div class="modal-content"></div>
-            <a class="close-modal">
-                Fechar modal
-            </a>
-        </div>
-    </div>
 {% endblock %}

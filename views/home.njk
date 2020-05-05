@@ -22,11 +22,11 @@
             {% for card in cards %}
                 <div class="card-accessed">
                     <div class="img-accessed">
-                        <img src="{{card.image}}" alt="Burguer">
+                        <img src="{{card.smallImage}}" alt="{{card.idRecipe}}">
                     </div>
                     <div class="card-content-accessed">
                         <h3>{{card.title}}</h3>
-                        <span class="author">{{card.author}}</span>
+                        <span class="author">por {{card.author}}</span>
                     </div>
                 </div>
             {% endfor %}
