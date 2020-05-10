@@ -1,7 +1,12 @@
-const cards = document.querySelectorAll('.card-accessed');
+const cardsAccessed = document.querySelectorAll('.card-accessed');
+const card = document.querySelector('.card')
 
-for (const card of cards) {
+for (const card of cardsAccessed) {
+    const cardAccessedID = card.getAttribute('id')
+
     card.addEventListener("click", function() {
-        const cardAccessedID = card.getAttribute('id');
+        if (cardAccessedID != null) {
+            window.location.href = `/recipe/${cardAccessedID}`
+        }
     });
 }

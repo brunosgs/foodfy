@@ -3,3 +3,20 @@
 {% block head %}
     <title>Foodfy - Recipe information</title>
 {% endblock %}
+
+{% block wrapper %}
+    <section class="accessed">
+        <div id="{{recipe.idRecipe}}" class="card-accessed">
+            <div class="card-info">
+                <div class="img-accessed">
+                    <img src="{{recipe.bigImage}}" alt="{{recipe.name}}">
+                </div>
+                <div class="card-content-accessed">
+                    <h3>{{recipe.title}}</h3>
+                    <span class="author">por
+                        {{recipe.author}}</span>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

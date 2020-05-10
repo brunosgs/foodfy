@@ -1,5 +1,6 @@
 module.exports = [{
-        idRecipe: 'burger',
+        idRecipe: 0,
+        name: 'Burger',
         bigImage: 'https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/burger.png',
         smallImage: './assets/img/burger.png',
         title: 'Triplo bacon burger',
@@ -24,7 +25,8 @@ module.exports = [{
         information: "Preaqueça a chapa, frigideira ou grelha por 10 minutos antes de levar os hambúrgueres. Adicione um pouquinho de óleo ou manteiga e não amasse os hambúrgueres! \n\n Você sabia que a receita que precede o hambúrguer surgiu no século XIII, na Europa? A ideia de moer a carne chegou em Hamburgo no século XVII, onde um açogueiro resolveu também temperá-la. Assim, a receita foi disseminada nos Estados Unidos por alemães da região. Lá surgiu a ideia de colocar o hambúrguer no meio do pão e adicionar outros ingredientes, como queijom tomates e alface."
     },
     {
-        idRecipe: 'pizza',
+        idRecipe: 1,
+        name: 'Pizza',
         bigImage: 'https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/pizza.png',
         smallImage: './assets/img/pizza.png',
         title: 'Pizza 4 estações',
@@ -53,8 +55,9 @@ module.exports = [{
         information: 'Pizza de liquidificador é uma receita deliciosa e supersimples de preparar. Feita toda no liquidificador, ela é bem prática para o dia a dia. Aqui no TudoGostoso você também encontra diversas delícias práticas feitas no liquidificador: massa de panqueca, torta de frango de liquidificador, pão de queijo de liquidificador, bolo de banana, bolo de chocolate e muito mais!'
     },
     {
-        idRecipe: 'asinha',
-        bigbigImage: 'https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/asinha.png',
+        idRecipe: 2,
+        name: 'Asinha',
+        bigImage: 'https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/asinha.png',
         smallImage: './assets/img/asinhas.png',
         title: 'Asinhas de frango ao barbecue',
         author: 'Vania Steroski',
@@ -72,8 +75,9 @@ module.exports = [{
         information: ''
     },
     {
-        idRecipe: 'lasanha',
-        bigbigImage: 'https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/lasanha.png',
+        idRecipe: 3,
+        name: 'Lasanha',
+        bigImage: 'https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/lasanha.png',
         smallImage: './assets/img/lasanha.png',
         title: "Lasanha mac n' cheese",
         author: 'Juliano Vieira',
@@ -94,8 +98,9 @@ module.exports = [{
         information: 'Recheie a lasanha com o que preferir.'
     },
     {
-        idRecipe: 'macarrao',
-        bigbigImage: 'https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/macarrao.png',
+        idRecipe: 4,
+        name: 'Macarrão',
+        bigImage: 'https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/macarrao.png',
         smallImage: './assets/img/espaguete.png',
         title: 'Espaguete ao alho',
         author: 'Júlia Kinoto',
@@ -120,8 +125,9 @@ module.exports = [{
         information: 'Não lave o macarrão nem passe óleo ou gordura nele depois de escorrê-lo. Coloque direto na frigideira.'
     },
     {
-        idRecipe: 'doce',
-        bigbigImage: 'https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/doce.png',
+        idRecipe: 5,
+        name: 'Doce',
+        bigImage: 'https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/doce.png',
         smallImage: './assets/img/doce.png',
         title: 'Docinhos pão-do-céu',
         author: 'Ricardo Golvea',

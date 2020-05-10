@@ -12,7 +12,8 @@ server.set('view engine', 'njk')
 server.use(express.static('public'))
 
 nunjucks.configure('views', {
-    express: server
+    express: server,
+    noCache: true
 })
 
 server.get("/", function(req, res) {
@@ -25,4 +26,11 @@ server.get("/about", function(req, res) {
 
 server.get("/recipe", function(req, res) {
     return res.render("recipe", { cards: data })
+})
+
+server.get("/recipe/:id", function(req, res) {
+    const recipes = data
+    const idRecipe = req.params.id
+
+    return res.render("info-recipe", { recipe: recipes[idRecipe] })
 })

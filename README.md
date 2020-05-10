@@ -1,2 +1,4 @@
-# foodfy
-Project developed in the Bootcamp LaunchBase 3.0
+# Foodfy
+
+## 📌 Sobre
+Projeto desenvolvido no Bootcamp LaunchBase 3.0
